@@ -1,3 +1,63 @@
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Open Sans Light Italic"),local(OpenSans-LightItalic),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWyV9hlIqc.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWyV9hrIqM.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWyV9hlIqU.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"),local(OpenSans-Italic),url(//fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUK0Xdck.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUK0Zdc0.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUK0Xdcs.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: local("Open Sans SemiBold Italic"),local(OpenSans-SemiBoldItalic),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKXGUdhlIqc.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKXGUdhrIqM.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKXGUdhlIqU.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Open Sans Bold Italic"),local(OpenSans-BoldItalic),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhlIqc.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhrIqM.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhlIqU.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: local("Open Sans ExtraBold Italic"),local(OpenSans-ExtraBoldItalic),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hlIqc.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hrIqM.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hlIqU.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"),local(OpenSans-Light),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXOht.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXOhv.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"),local(OpenSans-Regular),url(//fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50f.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50d.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans SemiBold"),local(OpenSans-SemiBold),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXOht.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOUuhp.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXOhv.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"),local(OpenSans-Bold),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXOht.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXOhv.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans ExtraBold"),local(OpenSans-ExtraBold),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOXOht.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOXOhv.woff) format("woff");
+}
 *{
   padding: 0;
   margin: 0;
@@ -189,6 +249,9 @@ header{
             z-index: 5;
             overflow: visible;
           }
+.header--body .header--menu ul li:hover a:before{
+              transform: scaleX(1);
+            }
 .header--body .header--menu ul li a{
           -webkit-text-decoration: none;
           text-decoration: none;
@@ -197,7 +260,22 @@ header{
           font-weight: 500;
           font-size: 16px;
           transition: .75s all;
+          position: relative;
         }
+.header--body .header--menu ul li a:before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background:var(--secondFontColor) ;
+            top: -32px;
+            position: absolute;
+            transform: scaleX(0);
+            transition: .3s all;
+          }
+.header--body .header--menu ul li a.active:before{
+              transform: scaleX(1);
+            }
 .header--body .header--menu ul li .menu--sub{
           background: var(--layer5);
           padding: 40px 0 40px 0;
@@ -244,6 +322,9 @@ header{
                 gap: calc(var(--index));
                 color: rgba(255,255,255,.6);
               }
+.header--body .header--menu ul li .menu--sub .menu--sub--list li a:before{
+                  display: none;
+                }
 .header--body .header--menu ul li .menu--sub .menu--sub--list li a span{
                   color: #fff;
                 }
@@ -412,3 +493,241 @@ header{
          object-fit: cover;
 
     }
+.section-title{
+  font-size: 32px;
+  font-family: var(--mainFont);
+  font-weight: 500;
+  color: var(--mainFontColor);
+}
+.section-description{
+  margin-top: 20px;
+  color: #687186;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  color: #687186;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+.section--link{
+  display: block;
+  margin-top: 40px;
+  line-height: 1.5;
+  background: 0 0;
+  color: var(--mainFontColor);
+  position: relative;
+  z-index: 0;
+  border-radius: 0;
+  font-family: var(--mainFont);
+  font-weight: 600;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  transition: .2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-size: 12px;
+  position: relative;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: max-content;
+}
+.section--link:before{
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 100%;
+    z-index: -1;
+    border-bottom: 4px solid rgba(79,170,231,.8);
+    transition: right .3s ease-out;
+  }
+.section--link:hover:before{
+      right: 0;
+    }
+.section-name{
+  color: var(--secondFontColor);
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 1.4;
+  font-family: var(--mainFont);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-style: normal;
+  margin-bottom: 32px;
+  display: block;
+}
+.section-btn{
+  background-position: 50% 100%;
+  background-size: 0;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.165,0.85,0.45,1);
+  color: #fff;
+  background-color: var(--mainFontColor);
+  padding: 0 35px;
+  line-height: 56px;
+  font-size: 13px;
+  background-image: radial-gradient(circle at 50% 100%, var(--secondFontColor) 1%,transparent 1%);
+  transition: .2s ease-in-out;
+  transition-property: color,background-color,background-position,background-size,border-color,box-shadow;
+  font-family: var(--mainFont);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-style: normal;
+  border-radius: 500px;
+  transition-duration: .5s;
+  margin-top: 70px;
+}
+.section-btn:hover{
+    background-size: 15000%;
+    color: #fff;
+  }
+.services_section{
+  position: relative;
+}
+.services_section .services_section--row{
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.33333% - 4px));
+
+  }
+.services_section .services_section--row .services_section--item{
+      transition: .1s ease-in-out;
+      transition-property: background-color,background-size;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 70px;
+      box-sizing: border-box;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      background-position: 50% 100%;
+      transition-timing-function: cubic-bezier(0.165,0.85,0.45,1);
+      transition-duration: .5s;
+      background-repeat: no-repeat;
+      background-size: 0 0;
+      background-image: radial-gradient(farthest-side at 50% 100%,#eff3f6 calc(100% - 1px),rgba(239,243,246,0) 100%);
+    }
+.services_section .services_section--row .services_section--item img{
+        width: 68px;
+        height: 68px;
+      }
+.services_section .services_section--row .services_section--item h3{
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 1.4;
+        font-family: var(--mainFont);
+        font-weight: 500;
+        color: var(--mainFontColor)
+      }
+.services_section .services_section--row .services_section--item .item--link{
+        margin-top: 70px;
+        padding: 0 30px;
+        border-radius: 500px;
+        width: -moz-max-content;
+        width: -webkit-max-content;
+        width: max-content;
+        font-size: 12px;
+        line-height: 48px;
+        display: block;
+        background-position: 50% 100%;
+        background-size: 0;
+        transition-duration: .5s;
+        transition-timing-function: cubic-bezier(0.165,0.85,0.45,1);
+        color: var(--mainFontColor);
+        background-color: #ecf0f5;
+        background-image: radial-gradient(circle at 50% 100%,#e6ebf1 1%,transparent 1%);
+      }
+.services_section .services_section--row .services_section--item .item--link svg{
+          -o-object-fit: contain;
+             object-fit: contain;
+          width: 28px;
+          height: 28px;
+          stroke: var(--mainFontColor);
+          stroke-width:1 ;
+        }
+.services_section .services_section--row .services_section--item .item--link:hover{
+          background-size: 15000%;
+        }
+.services_section .services_section--row .services_section--item:nth-child(2n){
+        background-color: #f6f8fa;
+      }
+.services_section .services_section--row .services_section--item:first-child{
+        background: transparent;
+        padding-left: 0;
+      }
+.services_section .services_section--row .services_section--item:first-child:hover{
+          background: transparent;
+        }
+.services_section .services_section--row .services_section--item:hover{
+        background-color: #f6f8fa;
+        background-size: 150% 150%;
+      }
+.services_section .banner_section--bg_layer{
+    left: 0;
+    width: 165px;
+    height: 330px;
+    margin-top: -140px;
+  }
+.services_section .banner_section--bg_layer svg{
+      width: 100%;
+      height: 100%;
+      fill: var(--secondFontColor);
+    }
+.doctors_section{
+  position: relative;
+  padding-bottom: 140px;
+
+}
+.doctors_section .doctors_section--row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+.doctors_section .doctors_section--row .doctors_section--img img{
+        max-width: 1270px;
+
+      }
+.about_section .about_section--top{
+    margin-bottom: 70px;
+  }
+.about_section .about--gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-areas:
+    "first first second three"
+    "first first four five";
+  }
+.about_section .about--gallery a{
+      display: block;
+    }
+.about_section .about--gallery a img{
+        width: 100%;
+        height: 100%;
+      }
+.about_section .about--gallery a:first-child{
+        grid-area: first;
+      }
+.about_section .about--gallery a:nth-child(2){
+        grid-area: second;
+      }
+.about_section .about--gallery a:nth-child(3){
+        grid-area: three;
+      }
+.about_section .about--gallery a:nth-child(4){
+        grid-area: four;
+      }
+.about_section .about--gallery a:nth-child(5){
+        grid-area: five;
+      }

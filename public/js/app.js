@@ -7,5 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
       items[i].classList.remove(clearClass);
     }
   }
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
 });
 //# sourceMappingURL=app.js.map

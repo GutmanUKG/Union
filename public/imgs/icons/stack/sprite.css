@@ -1,3 +1,13 @@
+.svg-arrow-dims {
+    width: 28px;
+    height: 28px;
+}
+
+.svg-arrow-r-dims {
+    width: 800px;
+    height: 800px;
+}
+
 .svg-f-ico-dims {
     width: 800px;
     height: 800px;
@@ -6,6 +16,11 @@
 .svg-home-shape-01-dims {
     width: 170px;
     height: 170px;
+}
+
+.svg-home-shape-02-dims {
+    width: 165px;
+    height: 330px;
 }
 
 .svg-inst-ico-dims {

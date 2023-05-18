@@ -8,6 +8,11 @@
     height: 800px;
 }
 
+.svg-check-icon-dims {
+    width: 36px;
+    height: 36px;
+}
+
 .svg-f-ico-dims {
     width: 800px;
     height: 800px;
@@ -30,6 +35,11 @@
 
 .svg-linkedin-ico-dims {
     width: 800px;
+    height: 800px;
+}
+
+.svg-patient-bg-dims {
+    width: 540px;
     height: 800px;
 }
 

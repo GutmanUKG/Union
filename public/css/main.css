@@ -696,6 +696,9 @@ header{
         max-width: 1270px;
 
       }
+.about_section{
+  padding-bottom: 140px;
+}
 .about_section .about_section--top{
     margin-bottom: 70px;
   }
@@ -724,6 +727,7 @@ header{
       }
 .about_section .about--gallery a:nth-child(3){
         grid-area: three;
+
       }
 .about_section .about--gallery a:nth-child(4){
         grid-area: four;
@@ -731,3 +735,73 @@ header{
 .about_section .about--gallery a:nth-child(5){
         grid-area: five;
       }
+.patients_section{
+  position: relative;
+}
+.patients_section .patients_section--bg{
+    position: absolute;
+    left: 0;
+    width: calc(19vw + 19vh);
+    width: calc(19vw + 19vh);
+    width: calc(var(--index)*19);
+    height: calc(28vw + 28vh);
+    height: calc(28vw + 28vh);
+    height: calc(var(--index)*28);
+    top: -40%;
+  }
+.patients_section .patients_section--bg svg{
+      width: 100%;
+      height: 100%;
+    }
+.patients_section .patients--items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(1vw + 1vh);
+    gap: calc(1vw + 1vh);
+    grid-gap: calc(1vw + 1vh);
+    grid-gap: calc(1vw + 1vh);
+    grid-gap: calc(var(--index));
+    gap: calc(var(--index));
+    justify-content: space-between;
+  }
+.patients_section .patients--items .item{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: calc(1vw + 1vh);
+      gap: calc(1vw + 1vh);
+      gap: calc(var(--index));
+    }
+.patients_section .patients--items .item .item--icon{
+        background: #FEDF72;
+        min-width: 36px;
+        max-width: 36px;
+        height: 36px;
+        border-radius: 50%;
+      }
+.patients_section .patients--items .item .item--icon svg{
+          width: 100%;
+          height: 100%;
+          stroke: var(--mainFontColor);
+          fill: none;
+        }
+.patients_section .patients--items .item .item--info .item--title{
+          font-size: 24px;
+          line-height: 1.4;
+          font-family: var(--mainFont);
+          font-weight: 500;
+          color: var(--mainFontColor);
+          margin-bottom: 20px;
+        }
+.patients_section .patients--items .item .item--info .item--description{
+          font-family: "Open Sans",sans-serif;
+          font-size: 16px;
+          line-height: 24px;
+          text-decoration: none;
+          -webkit-text-decoration: none solid rgb(104, 113, 134);
+                  text-decoration: none solid rgb(104, 113, 134);
+          text-align: left;
+          word-spacing: 0px;
+          color: #687186;
+        }
+

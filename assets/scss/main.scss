@@ -8,6 +8,13 @@
 :root{
   --index: calc(1vw + 1vh);
 }
+::selection {
+  background: #FFDFC7; /* Safari */
+}
+::-moz-selection {
+  background: #FFDFC7; /* Firefox */
+
+}
 @font-face{
   font-family: Inter;
   font-style: normal;

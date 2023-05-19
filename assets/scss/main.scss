@@ -640,6 +640,7 @@ header{
 
 .patients_section{
   position: relative;
+  padding-bottom: 100px;
   .patients_section--bg{
     position: absolute;
     left: 0;
@@ -696,3 +697,190 @@ header{
   }
 }
 
+.contacts_section{
+  position: relative;
+  .layers{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(0%);
+    display: flex;
+    flex-direction: column;
+    svg{
+      height: 100%;
+      width: 100%;
+
+    }
+  }
+  .contacts--content{
+    margin-top: 70px;
+    display: flex;
+
+  }
+  .contacts--items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: calc(var(--index));
+    justify-content: space-between;
+    .item{
+      width: calc(50% + (var(--index) * 3));
+      .item--title{
+        font-family: var(--mainFont);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: left;
+        word-spacing: 0px;
+        color: var(--mainFontColor);
+      }
+      .item--description{
+        margin-top: 20px;
+        font-family: "Open Sans",sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        word-spacing: 0px;
+        color: #687186;
+      }
+      .item--link{
+        font-size: 17px;
+        line-height: 1.4;
+        font-family: var(--mainFont);
+        font-weight: 500;
+        color: var(--secondFontColor);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.image_section{
+  background-repeat:no-repeat;
+  background-size: cover;
+  padding: 140px 0;
+  box-sizing: border-box;
+  margin-top: 100px;
+  h3{
+    font-family: var(--mainFont);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50px;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  p{
+    font-family: var(--mainFont);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+  }
+  a{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--mainFont);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--mainFontColor);
+  }
+}
+footer{
+  padding-top: 70px;
+  padding-bottom: 40px;
+  border-bottom: 5px solid var(--secondFontColor);
+  .row-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: calc(var(--index));
+    margin-bottom: 70px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .item{
+      font-family: 'Open Sans',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #687186;
+      h5{
+        font-family: var(--mainFont);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 24px;
+        color: var(--mainFontColor);
+        margin-bottom: 20px;
+      }
+      span{
+        display: flex;
+        gap: calc(var(--index));
+        justify-content: space-between;
+        p{
+          text-align: right;
+          padding-right: calc(var(--index) * 2);
+        }
+      }
+      a{
+        text-decoration: none;
+        font-family: 'Open Sans',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #687186;
+      }
+      &.item--socials{
+        .social-list{
+          display: flex;
+          gap: calc(var(--index));
+          a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: radial-gradient(50% 50% at 50% 50%, #E6EBF1 0%, rgba(230, 235, 241, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #ECF0F5;
+            svg{
+              width: 80%;
+              height: 50%;
+              fill: var(--mainFontColor);
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-copy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    .item,
+    a{
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: calc(var(--index));
+      font-family: 'Open Sans',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      text-align: right;
+      color: #96A8BB;
+    }
+  }
+}

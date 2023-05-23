@@ -10,5 +10,38 @@ document.addEventListener('DOMContentLoaded', function () {
   Fancybox.bind("[data-fancybox]", {
     // Your custom options
   });
+  var burgerDefault = document.querySelector('.burger-toggle');
+  var headerMenu = document.querySelector('.header--menu');
+  var headerMenuLi = headerMenu.querySelectorAll('li');
+  headerMenuLi.forEach(function (item) {
+    if (item.querySelector('.menu--sub')) {
+      item.classList.add('menu--item_children');
+      var btnToggle = document.createElement('button');
+      btnToggle.classList.add('item--toggle_popup');
+      item.appendChild(btnToggle);
+      btnToggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        clearClass(btnToggle, 'active');
+        clearClass(headerMenuLi, 'menu--item_children--open');
+        btnToggle.classList.toggle('active');
+        if (btnToggle.classList.contains('active')) {
+          item.classList.add('menu--item_children--open');
+          item.classList.add('active');
+        } else {
+          item.classList.remove('menu--item_children--open');
+          item.classList.remove('active');
+        }
+      });
+    }
+  });
+  burgerDefault.addEventListener('click', function (e) {
+    e.preventDefault();
+    burgerDefault.classList.toggle('active');
+    if (burgerDefault.classList.contains('active')) {
+      headerMenu.classList.add('active');
+    } else {
+      headerMenu.classList.remove('active');
+    }
+  });
 });
 //# sourceMappingURL=app.js.map

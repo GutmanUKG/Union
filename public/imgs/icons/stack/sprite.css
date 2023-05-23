@@ -3,14 +3,29 @@
     height: 28px;
 }
 
+.svg-arrow-popup-dims {
+    width: 20px;
+    height: 20px;
+}
+
 .svg-arrow-r-dims {
     width: 800px;
     height: 800px;
 }
 
+.svg-burger-ico-dims {
+    width: 20px;
+    height: 20px;
+}
+
 .svg-check-icon-dims {
     width: 36px;
     height: 36px;
+}
+
+.svg-close-ico-dims {
+    width: 21px;
+    height: 21px;
 }
 
 .svg-f-ico-dims {

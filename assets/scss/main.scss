@@ -624,6 +624,7 @@ header{
 .doctors_section{
   position: relative;
   padding-bottom: 140px;
+  overflow-x: hidden;
   .doctors_section--row{
     display: flex;
     align-items: center;
@@ -933,10 +934,12 @@ footer{
   mask: url("../imgs/icons/sprite.svg#arrow-popup");
   background:rgba(255,255,255,.6);
   display: none;
+  transition: .3s all;
 }
 
 @media(max-width: 991px){
   .banner_section{
+    padding-top: 40px;
     .banner_section--row{
       flex-direction: column;
     }
@@ -1029,6 +1032,9 @@ footer{
               right: calc(var(--bs-gutter-x) * .5);;
               top: calc(45px / 2);
               transform: translateY(-50%);
+              &.active{
+                transform: translateY(-50%) rotate(180deg);
+              }
             }
           }
           &:hover{

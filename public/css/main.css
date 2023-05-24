@@ -1071,8 +1071,28 @@ footer .footer-copy .item,
   background:rgba(255,255,255,.6);
   display: none;
   transition: .3s all;
+
 }
 @media (max-width: 991px){
+  .section-title{
+    text-align: center;
+  }
+    .section-title br{
+      display: none;
+    }
+  .section-description{
+    text-align: center;
+  }
+  .section--link{
+    margin: 40px auto 0 auto;
+  }
+  .section-name{
+    text-align: center;
+  }
+
+  header{
+    top: 0;
+  }
   .banner_section{
     padding-top: 40px;
   }
@@ -1132,16 +1152,15 @@ footer .footer-copy .item,
     }
     .header--body .header--menu{
       overflow: hidden;
-      z-index: -500;
       transition: .3s all;
-      position: absolute;
+      position: fixed;
       background: #2853B9;
       height: 100vh;
-      top:0;
+      top:80px;
       bottom: 0;
-      width: 100vw;
+      width: 100%;
       left: 0;
-      transform: translate(-15%, -200%);
+      transform: translate(0%, -200%);
       padding-right: calc(var(--bs-gutter-x)*0.5);
       padding-left: calc(var(--bs-gutter-x)*0.5);
       display: -webkit-box;
@@ -1150,7 +1169,7 @@ footer .footer-copy .item,
       flex-direction: column;
     }
       .header--body .header--menu.active{
-        transform: translate(-15%, 0%);
+        transform: translate(0%, 0%);
         z-index: 5;
         overflow: visible;
       }
@@ -1267,7 +1286,174 @@ footer .footer-copy .item,
               font-family: 'Open Sans';
               color: rgba(255,255,255,.6);
             }
-  header{
+    .services_section .services_section--row{
+      grid-template-columns: 1fr;
+    }
+      .services_section .services_section--row .services_section--item{
+        padding: 40px 0;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(50% 50% at 50% 50%, #EFF3F6 0%, rgba(239, 243, 246, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;
+      }
+        .services_section .services_section--row .services_section--item:nth-child(2n - 1){
 
+        }
+
+  .banner_section--bg_layer{
+    display: none;
   }
+      .banner_section .banner_section--img picture{
+        display: block;
+        width: 100%;
+      }
+        .banner_section .banner_section--img picture img{
+          max-width: 100%;
+        }
+  .doctors_section{
+    padding-top: 70px;
+  }
+    .doctors_section .doctors_section--row{
+      flex-direction: column;
+    }
+      .doctors_section .doctors_section--row .doctors_section--info{
+        max-width: 100%;
+        width: 100%;
+      }
+        .doctors_section .doctors_section--row .doctors_section--info .section-btn{
+          margin: 40px auto 30px auto;
+          display: block;
+          width: -moz-max-content;
+          width: -webkit-max-content;
+          width: max-content;
+        }
+    .doctors_section .doctors_section--img{
+      max-width: 720px;
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      width: 100%;
+      padding-right: 0.75rem;
+      padding-right: calc(var(--bs-gutter-x)*0.5);
+      padding-left: 0.75rem;
+      padding-left: calc(var(--bs-gutter-x)*0.5);
+      margin-right: auto;
+      margin-left: auto;
+    }
+      .doctors_section .doctors_section--img img{
+        width: 100%;
+      }
+      .about_section .about_section--top .col-6{
+        justify-content: center !important;
+      }
+      .about_section .about_section--top .col-6{
+        max-width: 100%;
+        width: 100%;
+      }
+    .patients_section .patients_section--bg{
+      //display: none;
+      top: 40px;
+    }
+    .patients_section .patients--info,
+    .patients_section .patients--items{
+      max-width: 100%;
+      width: 100%;
+    }
+    .patients_section .patients--info{
+      margin-bottom: 40px;
+    }
+    .contacts_section .col-4{
+      max-width: 100%;
+      width: 100%;
+    }
+    .contacts_section .layers{
+      display: none;
+    }
+    .contacts_section .btn--default{
+      margin: 40px auto !important;
+    }
+    .contacts_section .btn--default{
+      display: block;
+      width: -moz-max-content;
+      width: -webkit-max-content;
+      width: max-content;
+    }
+      .contacts_section .contacts--content .contants--map,
+      .contacts_section .contacts--content .contacts--items{
+        max-width: 100%;
+        width: 100%;
+      }
+      .contacts_section .contacts--content .contacts--items{
+        margin-top: 40px;
+      }
+        .contacts_section .contacts--content .contacts--items .item{
+          justify-content: flex-start !important;
+        }
+    .image_section .col-6{
+      max-width: 100%;
+      width: 100%;
+    }
+  footer .row-grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+  }
+      footer .row-grid .item:first-child{
+        grid-area: 1/1/2/3;
+        margin-bottom: 30px;
+      }
+    footer .footer-copy{
+      flex-direction: column;
+      gap: 10px;
+    }
+      footer .footer-copy .item{
+        text-align: center;
+      }
+}
+@media (max-width: 600px){
+    .header--info .info--phone{
+      display: none;
+    }
+    .banner_section .banner_section--img,
+    .banner_section .banner_section--text{
+      padding-right: calc(var(--bs-gutter-x)*0.5);
+      padding-left: calc(var(--bs-gutter-x)*0.5);
+    }
+  .about_section .about--gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-areas: none;
+  }
+      .about_section .about--gallery a:first-child{
+        grid-area: 1 / 1 / 3 / 3;
+      }
+      .about_section .about--gallery a:nth-child(2){
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      .about_section .about--gallery a:nth-child(3){
+        grid-area: 3 / 2 / 4 / 3;
+      }
+      .about_section .about--gallery a:nth-child(4){
+        grid-area: 4 / 1 / 5 / 2;
+      }
+      .about_section .about--gallery a:nth-child(5){
+        grid-area: 4 / 2 / 5 / 3;
+      }
+
+  .patients_section .patients--items{
+    gap: 40px !important;
+  }
+
+  .patients_section .patients--items{
+    grid-template-columns: 1fr;
+  }
+  .patients_section .patients--items .item{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+    .patients_section .patients--items .item .item--description{
+      text-align: center !important;
+    }
 }

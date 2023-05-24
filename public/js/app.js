@@ -39,8 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
     burgerDefault.classList.toggle('active');
     if (burgerDefault.classList.contains('active')) {
       headerMenu.classList.add('active');
+      body.style.cssText += 'overflow: hidden; position: fixed; width: 100%;';
+      headerMenu.style.cssText += "max-width: ".concat(body.clientWidth, "px;");
     } else {
       headerMenu.classList.remove('active');
+      body.style.cssText += 'overflow: visible; position: static;';
     }
   });
 });

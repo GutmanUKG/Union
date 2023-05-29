@@ -47,4 +47,33 @@ document.addEventListener('DOMContentLoaded', ()=>{
             body.style.cssText += 'overflow: visible; position: static;'
         }
     })
+
+    class Accardion{
+        constructor({parentElement = null, childList= null}){
+            this.parentElement = document.querySelectorAll(parentElement)
+            this.childList = childList
+        }
+        init(){
+            this.parentElement.forEach(item=>{
+
+                let childrenItems = item.querySelectorAll(this.childList)
+                childrenItems.forEach((i,idx)=>{
+
+                    i.addEventListener('click', (e)=>{
+                        i.parentNode.classList.toggle('active')
+                    })
+                })
+            })
+        }
+    }
+
+    try{
+        const faqServicesDetail = new Accardion({
+            parentElement: '.faq-list',
+            childList: '.item--title'
+        })
+        faqServicesDetail.init()
+    }catch(e){
+
+    }
 })

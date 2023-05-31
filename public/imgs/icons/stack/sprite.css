@@ -23,6 +23,11 @@
     height: 36px;
 }
 
+.svg-clock-dims {
+    width: 24px;
+    height: 24px;
+}
+
 .svg-close-ico-dims {
     width: 21px;
     height: 21px;
@@ -49,6 +54,26 @@
 }
 
 .svg-linkedin-ico-dims {
+    width: 800px;
+    height: 800px;
+}
+
+.svg-location-dims {
+    width: 800px;
+    height: 800px;
+}
+
+.svg-mail-dims {
+    width: 800px;
+    height: 800px;
+}
+
+.svg-mail-2-dims {
+    width: 800px;
+    height: 800px;
+}
+
+.svg-mess-dims {
     width: 800px;
     height: 800px;
 }
@@ -81,6 +106,11 @@
 .svg-phone-dark-dims {
     width: 800px;
     height: 800px;
+}
+
+.svg-reader-dims {
+    width: 21px;
+    height: 21px;
 }
 
 .svg-search-dark-dims {

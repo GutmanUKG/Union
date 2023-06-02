@@ -1,16 +1,11 @@
 'use strict'
 document.addEventListener('DOMContentLoaded', ()=>{
-
     let body = document.body;
     function clearClass(items, clearClass){
         for(let i = 0; i < items.length; i++){
             items[i].classList.remove(clearClass)
         }
     }
-    Fancybox.bind("[data-fancybox]", {
-        // Your custom options
-    });
-
     const burgerDefault = document.querySelector('.burger-toggle')
     const headerMenu = document.querySelector('.header--menu')
     const headerMenuLi = headerMenu.querySelectorAll('li')
@@ -74,6 +69,64 @@ document.addEventListener('DOMContentLoaded', ()=>{
         })
         faqServicesDetail.init()
     }catch(e){
+
+    }
+
+    try{
+        let sliderBig = tns({
+            container: '.gallery-big',
+            items: 1,
+            slideBy: 'page',
+            nav: true,
+            prevButton: '.gallery-big--prev',
+            nextButton: '.gallery-big--next',
+            loop:false
+        });
+        let sliderDots = tns({
+            container: '.slider--dots',
+            items: 5,
+            slideBy: 'page',
+            nav: false,
+
+            controls: false,
+            fixedWidth: 100,
+            loop:false
+
+        });
+
+        const gallerySliderDots = document.querySelector('.gallery--slider--dots'),
+            sliderItem = gallerySliderDots.querySelectorAll('.tns-item');
+
+        sliderItem.forEach((item,idx)=>{
+            item.addEventListener('click', ()=>{
+                sliderBig.goTo(idx)
+                console.log(idx)
+                clearClass(sliderItem, 'active-dot')
+                item.classList.add('active-dot')
+            })
+        })
+        const gallerySlider = document.querySelector('.gallery--slider'),
+            galleryItems = gallerySlider.querySelectorAll('.tns-item'),
+            btnNext = gallerySlider.querySelector('.gallery-big--next'),
+            btnPrev = gallerySlider.querySelector('.gallery-big--prev');
+
+        btnNext.addEventListener('click', ()=>{
+            var info = sliderBig.getInfo(),
+                indexCurrent = info.index;
+            sliderDots.goTo(indexCurrent)
+            clearClass(sliderItem, 'active-dot')
+            sliderItem[indexCurrent].classList.add('active-dot')
+        })
+
+        btnPrev.addEventListener('click', ()=>{
+            var info = sliderBig.getInfo(),
+                indexCurrent = info.index;
+            sliderDots.goTo(indexCurrent)
+            clearClass(sliderItem, 'active-dot')
+            sliderItem[indexCurrent].classList.add('active-dot')
+        })
+        sliderItem[0].classList.add('active-dot')
+    }catch (e) {
 
     }
 })

@@ -13,9 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
       items[i].classList.remove(clearClass);
     }
   }
-  Fancybox.bind("[data-fancybox]", {
-    // Your custom options
-  });
   var burgerDefault = document.querySelector('.burger-toggle');
   var headerMenu = document.querySelector('.header--menu');
   var headerMenuLi = headerMenu.querySelectorAll('li');
@@ -84,6 +81,55 @@ document.addEventListener('DOMContentLoaded', function () {
       childList: '.item--title'
     });
     faqServicesDetail.init();
+  } catch (e) {}
+  try {
+    var sliderBig = tns({
+      container: '.gallery-big',
+      items: 1,
+      slideBy: 'page',
+      nav: true,
+      prevButton: '.gallery-big--prev',
+      nextButton: '.gallery-big--next',
+      loop: false
+    });
+    var sliderDots = tns({
+      container: '.slider--dots',
+      items: 5,
+      slideBy: 'page',
+      nav: false,
+      controls: false,
+      fixedWidth: 100,
+      loop: false
+    });
+    var gallerySliderDots = document.querySelector('.gallery--slider--dots'),
+      sliderItem = gallerySliderDots.querySelectorAll('.tns-item');
+    sliderItem.forEach(function (item, idx) {
+      item.addEventListener('click', function () {
+        sliderBig.goTo(idx);
+        console.log(idx);
+        clearClass(sliderItem, 'active-dot');
+        item.classList.add('active-dot');
+      });
+    });
+    var gallerySlider = document.querySelector('.gallery--slider'),
+      galleryItems = gallerySlider.querySelectorAll('.tns-item'),
+      btnNext = gallerySlider.querySelector('.gallery-big--next'),
+      btnPrev = gallerySlider.querySelector('.gallery-big--prev');
+    btnNext.addEventListener('click', function () {
+      var info = sliderBig.getInfo(),
+        indexCurrent = info.index;
+      sliderDots.goTo(indexCurrent);
+      clearClass(sliderItem, 'active-dot');
+      sliderItem[indexCurrent].classList.add('active-dot');
+    });
+    btnPrev.addEventListener('click', function () {
+      var info = sliderBig.getInfo(),
+        indexCurrent = info.index;
+      sliderDots.goTo(indexCurrent);
+      clearClass(sliderItem, 'active-dot');
+      sliderItem[indexCurrent].classList.add('active-dot');
+    });
+    sliderItem[0].classList.add('active-dot');
   } catch (e) {}
 });
 //# sourceMappingURL=app.js.map

@@ -1,0 +1,584 @@
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Open Sans Light Italic"),local(OpenSans-LightItalic),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWyV9hlIqc.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWyV9hrIqM.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWyV9hlIqU.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"),local(OpenSans-Italic),url(//fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUK0Xdck.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUK0Zdc0.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUK0Xdcs.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: local("Open Sans SemiBold Italic"),local(OpenSans-SemiBoldItalic),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKXGUdhlIqc.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKXGUdhrIqM.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKXGUdhlIqU.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Open Sans Bold Italic"),local(OpenSans-BoldItalic),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhlIqc.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhrIqM.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhlIqU.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: local("Open Sans ExtraBold Italic"),local(OpenSans-ExtraBoldItalic),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hlIqc.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hrIqM.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hlIqU.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"),local(OpenSans-Light),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXOht.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXOhv.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"),local(OpenSans-Regular),url(//fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50f.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50d.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans SemiBold"),local(OpenSans-SemiBold),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXOht.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOUuhp.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXOhv.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"),local(OpenSans-Bold),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXOht.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXOhv.woff) format("woff");
+}
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans ExtraBold"),local(OpenSans-ExtraBold),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOXOht.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOXOhv.woff) format("woff");
+}
+@media (max-width: 1549px){
+  .team_section .team--list{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media (max-width: 1399px){
+    .doctor-photo:before,
+    .doctor-photo:after,
+    .doctor-experience:before,
+    .doctor-experience:after{
+      display: none;
+    }
+}
+@media (max-width: 1199px){
+  .team_section .team--list{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+  }
+    .about_section .col-4,
+    .about_section .patients--items{
+      width: 100%;
+      max-width: 100%;
+    }
+    .about_section .col-4{
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .career_section .col-4,
+    .career_section .career--list{
+      width: 100%;
+      max-width: 100%;
+    }
+    .career_section .col-4{
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  .blog-list{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 1024px){
+    .contact-list .contact-list--items{
+      grid-template-columns: repeat(2,1fr);
+    }
+      .doctor-experience .experience-list .experience-item{
+        gap: 20px;
+      }
+        .doctor-experience .experience-list .experience-item .item-name,
+        .doctor-experience .experience-list .experience-item .item-list{
+          max-width: 100%;
+          width: 100%;
+        }
+}
+@media (max-width: 991px){
+  .section-title{
+    text-align: center;
+  }
+    .section-title br{
+      display: none;
+    }
+  .section-description{
+    text-align: center;
+  }
+  .section--link{
+    margin: 40px auto 0 auto;
+  }
+  .section-name{
+    text-align: center;
+  }
+
+  header{
+    top: 0;
+  }
+  .banner_section{
+    padding-top: 40px;
+  }
+    .banner_section .banner_section--row{
+      flex-direction: column;
+    }
+    .banner_section .banner_section--text{
+      max-width: 100%;
+      width: 100%;
+      min-height: -moz-max-content;
+      min-height: -webkit-max-content;
+      min-height: max-content;
+    }
+      .banner_section .banner_section--text h1{
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .banner_section .banner_section--text span{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .banner_section .banner_section--text svg{
+        display: none;
+      }
+    .banner_section .banner_section--img{
+      width: 100%;
+      max-width: 100%;
+    }
+    .header--top .header--info{
+      gap: 15px;
+    }
+      .header--top .header--info .info--socials{
+        display: none;
+      }
+    .header--top .burger-toggle{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+    }
+        .header--top .burger-toggle.active svg{
+          display: none;
+        }
+        .header--top .burger-toggle.active svg.close{
+          display: block;
+          stroke: var(--mainFontColor);
+          -o-object-fit: contain;
+             object-fit: contain;
+        }
+  .header--body{
+    padding: 0;
+  }
+    .header--body .btn--default{
+      display: none;
+    }
+    .header--body .header--menu{
+      overflow: hidden;
+      transition: .3s all;
+      position: fixed;
+      background: #2853B9;
+      height: 100vh;
+      top:80px;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      transform: translate(0%, -200%);
+      padding-right: calc(var(--bs-gutter-x)*0.5);
+      padding-left: calc(var(--bs-gutter-x)*0.5);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+    }
+      .header--body .header--menu.active{
+        transform: translate(0%, 0%);
+        z-index: 5;
+        overflow: visible;
+      }
+
+      .header--body .header--menu ul{
+        flex-direction: column;
+        gap: 10px;
+      }
+
+        .header--body .header--menu ul li{
+          width: 100%;
+          border-top: 1px solid #e7e8ea;
+          padding: 10px 0;
+          position: relative;
+        }
+            .header--body .header--menu ul li.menu--item_children .item--toggle_popup{
+              display: block;
+              position: absolute;
+              right: calc(var(--bs-gutter-x)*0.5);;
+              top: 22.5px;
+              transform: translateY(-50%);
+            }
+              .header--body .header--menu ul li.menu--item_children .item--toggle_popup.active{
+                transform: translateY(-50%) rotate(180deg);
+              }
+            .header--body .header--menu ul li:hover .menu--sub{
+              display: none;
+            }
+          .header--body .header--menu ul li:first-child{
+            border-top: transparent;
+          }
+            .header--body .header--menu ul li.active a{
+              color: #fff;
+            }
+          .header--body .header--menu ul li .menu--sub{
+            display: none;
+            padding: 5px 0 5px 15px;
+            margin-top: 0;
+          }
+            .header--body .header--menu ul li .menu--sub .menu--sub_content{
+              max-width: 100%;
+            }
+
+              .header--body .header--menu ul li .menu--sub .menu--sub_content .menu--sub--list{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+              }
+                .header--body .header--menu ul li .menu--sub .menu--sub_content .menu--sub--list .menu--sub_item{
+                  border: none;
+                }
+                    .header--body .header--menu ul li .menu--sub .menu--sub_content .menu--sub--list .menu--sub_item a img{
+                      display: none;
+                    }
+                      .header--body .header--menu ul li .menu--sub .menu--sub_content .menu--sub--list .menu--sub_item a .list--link_content span{
+                        font-size: 16px;
+                        color: rgba(255,255,255,.6);
+                      }
+                      .header--body .header--menu ul li .menu--sub .menu--sub_content .menu--sub--list .menu--sub_item a .list--link_content{
+                      font-size: 0;
+  }
+              .header--body .header--menu ul li .menu--sub .menu--sub_content .menu--sub_info{
+                display: none;
+
+              }
+            .header--body .header--menu ul li.menu--item_children--open .menu--sub{
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+            }
+          .header--body .header--menu ul li a{
+            color: rgba(255,255,255,.6);
+          }
+
+            .header--body .header--menu ul li a.active{
+              color: #fff;
+            }
+            .header--body .header--menu ul li a:before{
+              display: none;
+            }
+      .header--body .header--menu .btn--default{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .header--body .header--menu .burger--copy{
+        display: block;
+        margin: auto auto;
+      }
+        .header--body .header--menu .burger--copy ul{
+          margin: 0;
+          padding: 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 20px;
+          color: rgba(255,255,255,.6);
+        }
+          .header--body .header--menu .burger--copy ul li{
+            border: none;
+            width: -moz-max-content;
+            width: -webkit-max-content;
+            width: max-content;
+          }
+
+            .header--body .header--menu .burger--copy ul li a{
+              font-size: 13px;
+              font-family: 'Open Sans';
+              color: rgba(255,255,255,.6);
+            }
+    .services_section .services_section--row{
+      grid-template-columns: 1fr;
+    }
+      .services_section .services_section--row .services_section--item{
+        padding: 40px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: radial-gradient(50% 50% at 50% 50%, #EFF3F6 0%, rgba(239, 243, 246, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;
+      }
+        .services_section .services_section--row .services_section--item:nth-child(2n - 1){
+
+        }
+
+  .banner_section--bg_layer{
+    display: none;
+  }
+      .banner_section .banner_section--img picture{
+        display: block;
+        width: 100%;
+      }
+        .banner_section .banner_section--img picture img{
+          max-width: 100%;
+        }
+  .doctors_section{
+    padding-top: 70px;
+  }
+    .doctors_section .doctors_section--row{
+      flex-direction: column;
+    }
+      .doctors_section .doctors_section--row .doctors_section--info{
+        max-width: 100%;
+        width: 100%;
+      }
+        .doctors_section .doctors_section--row .doctors_section--info .section-btn{
+          margin: 40px auto 30px auto;
+          display: block;
+          width: -moz-max-content;
+          width: -webkit-max-content;
+          width: max-content;
+        }
+    .doctors_section .doctors_section--img{
+      max-width: 720px;
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      width: 100%;
+      padding-right: 0.75rem;
+      padding-right: calc(var(--bs-gutter-x)*0.5);
+      padding-left: 0.75rem;
+      padding-left: calc(var(--bs-gutter-x)*0.5);
+      margin-right: auto;
+      margin-left: auto;
+    }
+      .doctors_section .doctors_section--img img{
+        width: 100%;
+      }
+      .about_section .about_section--top .col-6{
+        justify-content: center !important;
+      }
+      .about_section .about_section--top .col-6{
+        max-width: 100%;
+        width: 100%;
+      }
+
+
+  .patients_section--bg{
+    top: 40px;
+  }
+  .patients--info,
+  .patients--items{
+    max-width: 100%;
+    width: 100%;
+  }
+  .patients--info{
+    margin-bottom: 40px;
+  }
+    .contacts_section .col-4{
+      max-width: 100%;
+      width: 100%;
+    }
+    .contacts_section .layers{
+      display: none;
+    }
+    .contacts_section .btn--default{
+      margin: 40px auto !important;
+    }
+    .contacts_section .btn--default{
+      display: block;
+      width: -moz-max-content;
+      width: -webkit-max-content;
+      width: max-content;
+    }
+      .contacts_section .contacts--content .contants--map,
+      .contacts_section .contacts--content .contacts--items{
+        max-width: 100%;
+        width: 100%;
+      }
+      .contacts_section .contacts--content .contacts--items{
+        margin-top: 40px;
+      }
+        .contacts_section .contacts--content .contacts--items .item{
+          justify-content: flex-start !important;
+        }
+    .image_section .col-6{
+      max-width: 100%;
+      width: 100%;
+    }
+  footer .row-grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+  }
+      footer .row-grid .item:first-child{
+        grid-area: 1/1/2/3;
+        margin-bottom: 30px;
+      }
+    footer .footer-copy{
+      flex-direction: column;
+      gap: 10px;
+    }
+      footer .footer-copy .item{
+        text-align: center;
+      }
+      .banner_section--inner .banner_section--text h1{
+        margin-bottom: 20px;
+      }
+      .banner_section--inner .banner_section--text .banner_section--description{
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+
+  .services_additional{
+    margin-top: 140px;
+  }
+  .services_additional--list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+    .faq-wrapper .faq-text,
+    .faq-wrapper .faq-list{
+      max-width: 100%;
+      width: 100%;
+    }
+    .services_additional--list .services_additional--item{
+      gap: calc(var(--index)*3);
+    }
+
+  .contact-info .contact-info--text{
+    grid-template-columns: 1fr;
+  }
+  .steps .steps-list .steps-item{
+    flex-direction: column;
+  }
+    .steps .steps-list .steps-item .steps-title,
+    .steps .steps-list .steps-item .steps-info{
+      width: 100%;
+    }
+  .inner .image_section svg{
+    display: none;
+  }
+}
+@media (max-width: 767px){
+  .career--list .career--item{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .blog-list{
+    grid-template-columns: 1fr;
+  }
+  .gallery-big{
+    height: 410px;
+  }
+  .doctor-description{
+    -moz-column-count: 1;
+         column-count: 1;
+    width: 100%;
+  }
+  .specialties-list{
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+    .doctor-experience .experience-list{
+      width: 100%;
+    }
+}
+@media (max-width: 600px){
+  .contact-list .contact-list--items{
+    grid-template-columns: 1fr;
+  }
+    .contact-list .contact-list--items .contact-item{
+      width: 100%;
+    }
+  .services_additional--list{
+    grid-template-columns: 1fr;
+  }
+    .header--info .info--phone{
+      display: none;
+    }
+    .banner_section .banner_section--img,
+    .banner_section .banner_section--text{
+      padding-right: calc(var(--bs-gutter-x)*0.5);
+      padding-left: calc(var(--bs-gutter-x)*0.5);
+    }
+
+  .about_section .about--gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-areas: none;
+  }
+      .about_section .about--gallery a:first-child{
+        grid-area: 1 / 1 / 3 / 3;
+      }
+      .about_section .about--gallery a:nth-child(2){
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      .about_section .about--gallery a:nth-child(3){
+        grid-area: 3 / 2 / 4 / 3;
+      }
+      .about_section .about--gallery a:nth-child(4){
+        grid-area: 4 / 1 / 5 / 2;
+      }
+      .about_section .about--gallery a:nth-child(5){
+        grid-area: 4 / 2 / 5 / 3;
+      }
+
+  .patients--items{
+    gap: 40px !important;
+  }
+
+  .patients--items{
+    grid-template-columns: 1fr;
+  }
+  .patients--items .item{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+    .patients--items .item .item--description{
+      text-align: center !important;
+    }
+  .doctor-experience .experience-list .experience-item .item-list .time-list{
+    grid-template-columns: 1fr;
+  }
+  .doctor-banner{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .doctor-specialties,
+  .doctor-experience{
+    padding-bottom: 40px;
+  }
+}

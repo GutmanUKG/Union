@@ -25,6 +25,25 @@ $size22: 22px;
   }
 }
 @media (max-width: 1199px) {
+  .doctors-list--main{
+    grid-template-columns: 1fr;
+  }
+  .blog-banner{
+    &:before,
+    &:after{
+      display: none;
+    }
+  }
+  .rewards-content{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    .section-title,
+    .rewards--list{
+      max-width: 100%;
+      width: 100%;
+    }
+  }
   .team_section .team--list{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -471,6 +490,30 @@ $size22: 22px;
   }
 }
 @media(max-width: 767px){
+  section.doctors{
+    padding-top: 40px !important;
+  }
+  .rewards{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .doctors-list--main{
+    .list-item{
+      flex-direction: column;
+      height: max-content;
+      .item-photo{
+        max-width: 100%;
+        height: auto;
+      }
+      .item-content{
+
+      }
+    }
+  }
+  .doctors-list--main .list-item .item-content .item--link{
+    margin-top: 40px;
+    transform: translateY(0);
+  }
   .career--list .career--item{
     flex-direction: column;
     justify-content: flex-start;

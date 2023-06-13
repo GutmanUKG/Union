@@ -72,6 +72,25 @@
     }
 }
 @media (max-width: 1199px){
+  .doctors-list--main{
+    grid-template-columns: 1fr;
+  }
+    .blog-banner:before,
+    .blog-banner:after{
+      display: none;
+    }
+  .rewards-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+    .rewards-content .section-title,
+    .rewards-content .rewards--list{
+      max-width: 100%;
+      width: 100%;
+    }
   .team_section .team--list{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -487,6 +506,30 @@
   }
 }
 @media (max-width: 767px){
+  section.doctors{
+    padding-top: 40px !important;
+  }
+  .rewards{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+    .doctors-list--main .list-item{
+      flex-direction: column;
+      height: -moz-max-content;
+      height: -webkit-max-content;
+      height: max-content;
+    }
+      .doctors-list--main .list-item .item-photo{
+        max-width: 100%;
+        height: auto;
+      }
+      .doctors-list--main .list-item .item-content{
+
+      }
+  .doctors-list--main .list-item .item-content .item--link{
+    margin-top: 40px;
+    transform: translateY(0);
+  }
   .career--list .career--item{
     flex-direction: column;
     justify-content: flex-start;

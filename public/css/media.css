@@ -58,6 +58,12 @@
   font-weight: 800;
   src: local("Open Sans ExtraBold"),local(OpenSans-ExtraBold),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOXOht.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOXOhv.woff) format("woff");
 }
+@media (max-width: 1585px){
+  .server-detail-left,
+  .server-detail-right{
+    display: none;
+  }
+}
 @media (max-width: 1549px){
   .team_section .team--list{
     grid-template-columns: repeat(3,1fr);
@@ -72,6 +78,55 @@
     }
 }
 @media (max-width: 1199px){
+  .server-content--cards .cards-list .card-item{
+    flex-direction: column;
+  }
+    .server-content--cards .cards-list .card-item .card-text,
+    .server-content--cards .cards-list .card-item .card-img{
+      width: 100%;
+    }
+
+    .server-content--cards .cards-list .card-item .card-img{
+      order: 0;
+    }
+    .server-content--cards .cards-list .card-item .card-text{
+      order: 1;
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+      .server-content--cards .cards-list .card-item:nth-child(2n) .card-img{
+        order: 0;
+      }
+      .server-content--cards .cards-list .card-item:nth-child(2n) .card-text{
+        order: 1;
+      }
+    .server-wrapper .server-content--wrapper,
+    .server-wrapper .server-sticky{
+      width: 100%;
+      max-width: 100%;
+    }
+    .server-wrapper .server-sticky{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      position: static;
+    }
+  .server-top{
+    padding-bottom: 0;
+  }
+    .server-top .top-icon{
+      margin-top: 0;
+    }
+    .server-item .server-text--title{
+      max-width: 100%;
+      width: 100%;
+    }
+    .server-item .col-8{
+      max-width: 100%;
+      width: 100%;
+    }
   .doctors-list--main{
     grid-template-columns: 1fr;
   }
@@ -116,6 +171,11 @@
     }
   .blog-list{
     grid-template-columns: repeat(2,1fr);
+  }
+  .blog-top:before,
+  .section-blog_author:after,
+  .section-blog_author:before{
+    display: none;
   }
 }
 @media (max-width: 1024px){
@@ -625,3 +685,4 @@
     padding-bottom: 40px;
   }
 }
+

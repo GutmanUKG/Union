@@ -10,6 +10,12 @@ $size17: 17px;
 $size11: 11px;
 $size20: 20px;
 $size22: 22px;
+@media(max-width: 1585px){
+  .server-detail-left,
+  .server-detail-right{
+    display: none;
+  }
+}
 @media(max-width: 1549px){
   .team_section .team--list{
     grid-template-columns: repeat(3,1fr);
@@ -25,6 +31,59 @@ $size22: 22px;
   }
 }
 @media (max-width: 1199px) {
+  .server-content--cards .cards-list .card-item{
+    flex-direction: column;
+    .card-text,
+    .card-img{
+      width: 100%;
+    }
+
+    .card-img{
+      order: 0;
+    }
+    .card-text{
+      order: 1;
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+    &:nth-child(2n){
+      .card-img{
+        order: 0;
+      }
+      .card-text{
+        order: 1;
+      }
+    }
+  }
+  .server-wrapper{
+    .server-content--wrapper,
+    .server-sticky{
+      width: 100%;
+      max-width: 100%;
+    }
+    .server-sticky{
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      position: static;
+    }
+  }
+  .server-top{
+    padding-bottom: 0;
+    .top-icon{
+      margin-top: 0;
+    }
+  }
+  .server-item{
+    .server-text--title{
+      max-width: 100%;
+      width: 100%;
+    }
+    .col-8{
+      max-width: 100%;
+      width: 100%;
+    }
+  }
   .doctors-list--main{
     grid-template-columns: 1fr;
   }
@@ -73,6 +132,11 @@ $size22: 22px;
   }
   .blog-list{
     grid-template-columns: repeat(2,1fr);
+  }
+  .blog-top:before,
+  .section-blog_author:after,
+  .section-blog_author:before{
+    display: none;
   }
 }
 @media(max-width: 1024px){
@@ -615,3 +679,4 @@ $size22: 22px;
     padding-bottom: 40px;
   }
 }
+

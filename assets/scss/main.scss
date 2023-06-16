@@ -494,6 +494,7 @@ header{
       max-width: calc(var(--index) * 45);
       width:  100%;
       height: calc(var(--index) * 24);
+      max-height: 700px;
       object-fit: cover;
 
     }

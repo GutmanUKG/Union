@@ -586,6 +586,7 @@ header{
       height: calc(24vw + 24vh);
       height: calc(24vw + 24vh);
       height: calc(var(--index)*24);
+      max-height: 700px;
       -o-object-fit: cover;
          object-fit: cover;
 

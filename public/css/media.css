@@ -99,6 +99,7 @@
       }
       .server-content--cards .cards-list .card-item:nth-child(2n) .card-text{
         order: 1;
+
       }
     .server-wrapper .server-content--wrapper,
     .server-wrapper .server-sticky{

@@ -66,6 +66,9 @@
   -webkit-text-decoration: none;
   text-decoration: none;
 }
+button{
+  outline: none;
+}
 :root{
   --index: calc(1vw + 1vh);
 }
@@ -2494,3 +2497,45 @@ section.map{
 .server-content--cards .cards-list .card-item .card-img img{
           width: 100%;
         }
+.modal-search{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.modal-search .btn-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+  }
+.modal-search input{
+    height: 80px;
+    background: 0 0;
+    font-size:calc(0.74074vw + 32.22222px);
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 0;
+    overflow: visible;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    width: 100%;
+    border: none;
+    color: #687186;
+    transition: .2s ease-in-out;
+    text-align: center;
+    transition-property: color,background-color,border-color,box-shadow;
+  }
+.modal-search.active{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }

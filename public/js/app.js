@@ -131,5 +131,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     sliderItem[0].classList.add('active-dot');
   } catch (e) {}
+  var infoSearchBtn = document.querySelector('.info--search_btn'),
+    modalSearch = document.querySelector('.modal-search'),
+    modalClose = modalSearch.querySelector('.btn-close');
+  infoSearchBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    modalSearch.classList.add('active');
+    body.style.cssText += 'overflow: hidden; position: fixed; width: 100%;';
+  });
+  modalClose.addEventListener('click', function (e) {
+    body.style.cssText += 'overflow: visible; position: static;';
+    modalSearch.classList.remove('active');
+  });
 });
 //# sourceMappingURL=app.js.map
